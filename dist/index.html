@@ -17,8 +17,11 @@
     }
     .player-video {
       width: 100%;
-      height: 96.5%;
+      height: 100%;
       box-shadow: 0 0 10px rgba(0,0,0,1);
+    }
+    .player-button-area {
+      background-color: black;
     }
   </style>
   <title>Пример подключения плеера</title>
@@ -29,7 +32,7 @@
   <div id="player" class="player-area">
     <div class="js-video-container player-video"></div>
       <!-- Here can be placed player controls: play and volume buttons -->
-    <div>
+    <div class="player-button-area">
       <button class="js-play-button player-button" hidden>
         <i class="fa fa-play" aria-hidden="true"></i>
       </button>
