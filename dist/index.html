@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+    .player-button {
+      border-style: none;
+      cursor: pointer;
+      color: white;
+      background-color: transparent;
+      width: 25px;
+      border: #fff;
+    }
+    .player-area {
+      background-color:black;
+      width: 800px;
+      height: 600px;
+    }
+    .player-video {
+      width: 100%;
+      height: 96.5%;
+    }
+  </style>
   <title>Пример подключения плеера</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <div style="background-color:black; width: 800px; height: 620px;">
-    <div id="player" style="width: 800px; height: 600px;">
-      <div class="js-video-container" style="width: 100%; height: 100%"></div>
-        <!-- Here can be placed player controls: play and volume buttons -->
-      <div>
-        <button class="js-play-button " style="border-style: none; cursor: pointer; color: white; 
-          background-color: transparent; width: 25px; height: 20px; border: #fff" hidden>
-          <i class="fa fa-play" aria-hidden="true"></i>
-        </button>
-        <button class="js-pause-button " style="border-style: none; cursor: pointer; color: white; 
-          background-color: transparent; width: 25px; height: 20px; border: #fff" hidden>
-          <i class="fa fa-pause" aria-hidden="true"></i>
-        </button>
-      </div>
+  <div id="player" class="player-area">
+    <div class="js-video-container player-video"></div>
+      <!-- Here can be placed player controls: play and volume buttons -->
+    <div>
+      <button class="js-play-button player-button" hidden>
+        <i class="fa fa-play" aria-hidden="true"></i>
+      </button>
+      <button class="js-pause-button player-button" hidden>
+        <i class="fa fa-pause" aria-hidden="true"></i>
+      </button>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
