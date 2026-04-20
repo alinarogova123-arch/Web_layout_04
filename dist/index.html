@@ -9,6 +9,8 @@
       border: #fff;
       font-size: 20pt;
       margin: 5pt;
+      height: 30px;
+      width: 35px;
     }
     .player-area {
       background-color:black;
@@ -25,6 +27,9 @@
       display: flex;
       flex-direction: row;
       background-color: black;
+    }
+    .player-progress-video {
+      flex-grow: 1;
     }
   </style>
   <title>Киностудия «ГОСТФильм»</title>
@@ -49,7 +54,7 @@
       <button class="js-mute-button player-button" hidden>
         <i class="fa fa-volume-up" aria-hidden="true"></i>
       </button>
-      <div style="flex-grow: 1;"></div>
+      <div class="player-progress-video"></div>
       <button class="js-fullscreen-button player-button">
         <i class="fa fa-expand" aria-hidden="true"></i>
       </button>
