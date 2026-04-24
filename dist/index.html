@@ -39,8 +39,31 @@
       flex-direction: row;
       align-items: center;
     }
-    .viewing-progressbar {
+    .progress {
       flex-grow: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: black;
+      margin: 6px;
+
+    }
+    .slider {
+      background-color: red;
+      border-radius: 2px;
+      height: 3px;
+    }
+    .dot {
+      margin-bottom: -1px;
+      margin-left: -5px;
+      border-style: solid;
+      border-color: white;
+      border-width: 2px;
+      height: 5px;
+      width: 5px;
+      background-color: red;
+      border-radius: 50%;
+      display: inline-block;
     }
   </style>
   <title>Киностудия «ГОСТФильм»</title>
@@ -69,7 +92,12 @@
         <div class="viewing-time">
           <span class="js-current-time"></span>
         </div>
-        <div class="viewing-progressbar"></div>
+        <div class="js-progress progress">
+          <div class="js-progress-slider slider"></div>
+          <div>
+            <span class="dot"></span>
+          </div>
+        </div>
         <div class="video-duration">
           <span class="js-duration"></span>
         </div>
