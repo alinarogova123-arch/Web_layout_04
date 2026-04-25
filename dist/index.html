@@ -54,6 +54,10 @@
       height: 3px;
     }
     .dot {
+      transition-property: opacity;
+      transition-duration: 300ms;
+      transition-timing-function: ease-in;
+      opacity: 0.0;
       margin-bottom: -1px;
       margin-left: -5px;
       border-style: solid;
@@ -64,6 +68,9 @@
       background-color: red;
       border-radius: 50%;
       display: inline-block;
+    }
+    .player-button-area:hover .dot {
+      opacity: 1.0;
     }
   </style>
   <title>Киностудия «ГОСТФильм»</title>
